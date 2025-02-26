@@ -37,7 +37,7 @@ def get_crypto():
         }
     response = requests.post(url, data=payload)
         
-    while response.url == "https://halavista.com":
+    while response.url == "https://fini.ac/":
             f2 = random.randint(0, len(dffsfsd) - 1)
             b2 = random.randint(0, len(dffsfsd) - 1)
             payload = {

