@@ -3,7 +3,8 @@
 
 ## ⚠️ Important ⚠️
 
-~~I have not tested any of the code in this repository. I’m not offering support—you're on your own. Figure it out yourself~~
+~~I have not tested any of the code in this repository. I’m not offering support—you're on your own. Figure it out yourself.~~
+
 *This is now tested and does not work, try to fix it yourself as I can't bother setup a test server*
 
 
